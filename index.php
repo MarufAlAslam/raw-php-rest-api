@@ -4,9 +4,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Handle all requests to the API
-if ($_SERVER['REQUEST_URI'] === '/swaap-api/api/users') {
+if ($_SERVER['REQUEST_URI'] === '/raw-php-rest-api/api/users') {
     require_once 'api/users.php';
-} else if ($_SERVER['REQUEST_URI'] === '/swaap-api/api/admin') {
+} else if ($_SERVER['REQUEST_URI'] === '/raw-php-rest-api/api/admin') {
     require_once 'api/admin.php';
 } else {
     http_response_code(404); // Not Found

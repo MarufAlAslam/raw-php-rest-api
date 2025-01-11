@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /swaap-api/
+RewriteBase /raw-php-rest-api/
 
 # Route all requests through index.php
 RewriteCond %{REQUEST_FILENAME} !-f
